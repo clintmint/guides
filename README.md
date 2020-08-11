@@ -10,7 +10,7 @@ Setting up a honeynet using MHN + AWS CLI
 
 ## Introduction
 
-The Modern Honey Network (MHN) is used for the deployment of honeypots and collection of attack data using various sensors. This guide will use the Amazon Web Services (AWS) EC2 for provisioning virtual machines (VM) for both the MHN administrative web application and its honeypot(s).
+The [Modern Honey Network](https://github.com/pwnlandia/mhn) (MHN) is used for the deployment of honeypots and collection of attack data using various sensors. This guide will use the Amazon Web Services (AWS) EC2 for provisioning virtual machines (VM) for both the MHN administrative web application and its honeypot(s).
 
 First aws is used to setup a new project and configure a firewall. The firewall for the MHN admin server is configured to allow in http, honeypot sensor data and geolocation data. The honeypot's firewall will allow in all TCP and UDP traffic from anywhere in the world.
 

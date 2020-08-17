@@ -1,8 +1,10 @@
 Using ffmpeg to cut obs-studio recordings
 ===
 
+Decrease `-crf` to increase quality and size. Generally don't need to go lower than 18. Default is 23.
+
 ```shell
-ffmpeg -i Lab1-Windows.mkv -crf 21 -filter_complex \
+ffmpeg -i input.mkv -crf 21 -filter_complex \
 "[0:v]trim=duration=1120,setpts=PTS-STARTPTS,format=yuv420p[0v];\
 [0:a]atrim=duration=1120,asetpts=PTS-STARTPTS[0a];\
 [0:v]trim=start=1140:end=1360,setpts=PTS-STARTPTS,format=yuv420p[1v];\

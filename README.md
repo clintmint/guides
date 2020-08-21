@@ -102,7 +102,7 @@ WPDistillery was cloned inside your home directory, cd into the cloned repo and 
 
 
 ```powershell
-cd $HOME\codepath_wordpress
+cd $HOME\WPDistillery
 
 vagrant up
 ```

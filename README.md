@@ -1,1 +1,1 @@
-#  See branches for Cheat Sheet Guides
+#  See branches

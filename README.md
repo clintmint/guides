@@ -5,6 +5,9 @@ tags: guide
 VirtualBox + Vagrant + WPDistillery using Windows 10 1903
 ===
 
+
+[![hackmd-github-sync-badge](https://hackmd.io/cX5ZGiLzSBe0yZTd8zb8lA/badge)](https://hackmd.io/cX5ZGiLzSBe0yZTd8zb8lA)
+
 ## Introduction
 
 This is a starter guide for quickly creating WordPress servers for penetration testing purposes. The guide assumes the reader has an update-to-date Windows 64-bit operating system.
@@ -95,11 +98,11 @@ setup:
 
 ## Create WordPress Virtual Machine using Vagrant
 
-Because WPDistillery was cloned inside your home directory you will need to modify the first command by replacing `$YOUR_USERNAME` with your username. In the **Administrator: Windows PowerShell** window type the following commands.
+WPDistillery was cloned inside your home directory, cd into the cloned repo and provison the machine. In the **Administrator: Windows PowerShell** window type the following commands.
 
 
 ```powershell
-cd C:\Users\$YOUR_USERNAME\codepath_wordpress
+cd $HOME\codepath_wordpress
 
 vagrant up
 ```
@@ -126,9 +129,10 @@ To stop the VM:
 vagrant halt
 ```
 
-When you are done you can delete the VM and cleanup using PowerShell (as Administrator) in the `C:\Users\USERNAME\WPDistillery\` directory. Replace USERNAME with your's.
+When you are done you can delete the VM and cleanup using PowerShell (as Administrator) in the WPDistillery in your home directory.
 
 ```powershell
+cd $HOME\WPDistillery
 vagrant destroy
 Remove-Item -Recurse -Force .\public\
 ```

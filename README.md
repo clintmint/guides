@@ -117,6 +117,11 @@ Admin login is here:
 
 http://wpdistillery.vm/wp-admin
 
+Set permalinks to simple otherwise you'll get URL routing issues:
+
+
+
+
 To SSH into the VM:
 
 ```powershell

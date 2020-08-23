@@ -117,9 +117,14 @@ Admin login is here:
 
 http://wpdistillery.vm/wp-admin
 
-Set permalinks to **Plain** otherwise you'll get URL routing issues:
+Set permalinks to **Plain or Default** otherwise you'll get URL routing issues:
 
-![](https://i.imgur.com/ycuX4oV.png)
+![latest](https://i.imgur.com/ycuX4oV.png)
+
+How to set it in version 4.2
+
+![4.2](https://i.imgur.com/7bSFrPt.png)
+
 
 To SSH into the VM:
 
